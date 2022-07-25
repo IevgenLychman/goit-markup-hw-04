@@ -113,8 +113,11 @@ img {
   list-style-type: none;
   padding: 0;
   display: flex;
-  margin-left: 301px;
-  align-items: center;
+  margin-left: 300px;
+  align-items: baseline;
+}
+.contact-list {
+  color: var(--secondary-text-color);
 }
 
 .contact-list + .contact-list {
@@ -133,26 +136,15 @@ img {
   margin-left: 10px;
 }
 
-.email-icon {
-  fill: var(--secondary-text-color);
-  width: 16px;
-  height: 12px;
+.contact-icon {
+  fill: currentColor;
+  outline: 1px solid black;
 }
 
-.tel-icon {
-  fill: var(--secondary-text-color);
-  width: 10px;
-  height: 16px;
-}
-
-.email {
-  text-decoration: none;
-  color: var(--secondary-text-color);
-}
-
+.email,
 .tel {
   text-decoration: none;
-  color: var(--secondary-text-color);
+  color: inherit;
 }
 
 /*--------MAIN-------*/
