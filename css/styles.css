@@ -141,7 +141,6 @@ img {
 
 .contact-icon {
   fill: currentColor;
-  display: inline-block;
 }
 
 .email,
@@ -484,11 +483,11 @@ img {
   background-color: var(--footer-background);
 }
 
-.footer-social {
+/*.footer-social {
   margin-left: 70px;
-  display: flex;
+  display: block;
   align-items: flex-end;
-}
+}*/
 
 .footer-social-text {
   font-weight: 700;
@@ -497,11 +496,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
+  margin-bottom: 20px;
 }
 
 .footer-social-contacts {
   list-style: none;
-  display: flex;
+  /*display: flex;*/
   gap: 10px;
 }
 
