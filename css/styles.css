@@ -117,10 +117,9 @@ img {
   margin-left: 305px;
   align-items: center;
 }
+
 .contact-list {
   color: var(--secondary-text-color);
-  display: flex;
-  align-items: center;
 }
 
 .contact-list + .contact-list {
@@ -136,7 +135,9 @@ img {
 .text {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-icon {
@@ -160,8 +161,9 @@ img {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  width: 1600px;
+  height: 600px;
   text-align: center;
-  max-width: 100%;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -323,7 +325,6 @@ img {
 .team-description {
   background-color: var(--background-color);
   flex-basis: calc((100% - 30px * 3) / 4);
-  padding-bottom: 30px;
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -334,9 +335,8 @@ img {
   margin-left: 0;
 }
 
-.team-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.team-img {
+  margin-bottom: 30px;
 }
 
 .team-name {
@@ -346,6 +346,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -355,7 +356,11 @@ img {
   letter-spacing: 0.03em;
   quotes: none;
   color: var(--secondary-text-color);
-  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.team-text {
+  padding-bottom: 30px;
 }
 
 .team-social {
@@ -414,6 +419,7 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  outline: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -504,7 +510,6 @@ img {
   list-style: none;
   display: flex;
   gap: 10px;
-  padding-left: 27px;
 }
 
 .footer-social-link {
@@ -524,7 +529,6 @@ img {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  color: var(--background-color);
   background-color: var(--hover-color);
 }
 /*--------PORTFOLIO-------*/
@@ -551,6 +555,7 @@ img {
   background: var(--team-background);
   padding: 6px 22px;
   cursor: pointer;
+  outline: transparent;
 }
 
 .filters-btn.current {
@@ -598,6 +603,11 @@ img {
 
 .body-part:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.portfolio-link {
+  display: block;
+  text-decoration: none;
 }
 
 .body-name {
