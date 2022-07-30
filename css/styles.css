@@ -527,7 +527,6 @@ img {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  color: var(--background-color);
   background-color: var(--hover-color);
 }
 /*--------PORTFOLIO-------*/
